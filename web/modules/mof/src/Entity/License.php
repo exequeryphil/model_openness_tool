@@ -36,14 +36,16 @@ use Drupal\mof\LicenseInterface;
  *   },
  *   base_table = "license",
  *   translatable = FALSE,
- *   collection_permission = "administer licenses",
+ *   admin_permission = "administer licenses",
+ *   collection_permission = "view licenses",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "name",
  *     "uuid" = "uuid",
  *   },
  *   links = {
- *     "collection" = "/admin/licenses",
+ *     "collection" = "/licenses",
+ *     "admin-collection" = "/admin/licenses",
  *     "add-form" = "/admin/license/add",
  *     "edit-form" = "/admin/license/{license}/edit",
  *     "delete-form" = "/admin/license/{license}/delete",
